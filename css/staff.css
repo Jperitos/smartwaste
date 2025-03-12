@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.head {
+    grid-column: span 2;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 15px;
+}
+
+.head .logo2 {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.head .logo2 img {
+    height: 40px;
+    margin-left: 8px;
+}
+
+.head input {
+    flex-grow: 1;
+    max-width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.head .tabs {
+    display: flex;
+    gap: 10px;
+}
+
+.head .tab {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #ddd;
+    transition: background 0.3s ease;
+}
+
+.head .tab.active {
+    background: darkgreen;
+    color: white;
+}
+
+.head .tab:hover {
+    background: lightgray;
+}
+
+.head input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.head .tab {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #ddd;
+}
+
+.head .tab.active {
+    background: darkgreen;
+    color: white;
+}
+
+main {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.banner {
+    background: darkgreen;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.history {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.history table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.history th, .history td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.history th {
+    background: #eee;
+}
+
+.status {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.status.done {
+    background: green;
+}
+
+.floor-status {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.bin-status p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress.yellow {
+    color: orange;
+}
+
+.progress.green {
+    color: green;
+}
+
+.progress.red {
+    color: red;
+    font-weight: bold;
+}
+
+.notify {
+    width: 100%;
+    padding: 10px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
