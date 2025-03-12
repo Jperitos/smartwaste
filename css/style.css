@@ -9,6 +9,9 @@ body {
     align-items: center;
     
 }
+html {
+    scroll-behavior: smooth;
+}
 .wrapper {
     height: 95%;
     width: 100%;
