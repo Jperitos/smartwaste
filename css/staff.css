@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -7,15 +7,13 @@ body {
 
 .dashboard {
     display: grid;
-    grid-template-columns: 1fr 300px;
-    grid-template-rows: auto 1fr;
     gap: 20px;
-    padding: 20px;
+    padding: 30px;
 }
 
 .head {
     grid-column: span 2;
-    padding: 15px;
+    max-width: 900px;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -23,112 +21,198 @@ body {
     gap: 15px;
 }
 
-.head .logo2 {
+.logo2 {
     display: flex;
     align-items: center;
     font-size: 22px;
+    gap: 60px;
     font-weight: bold;
 }
 
-.head .logo2 img {
-    height: 40px;
-    margin-left: 8px;
+.logo2 img {
+    height:25px;
+    margin-left: 20px;
 }
 
-.head input {
-    flex-grow: 1;
-    max-width: 300px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.logo2 input[type="text"] {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23666" d="M10 2a8 8 0 1 1-5.293 14.293l-4.366 4.367a1 1 0 0 1-1.414-1.414l4.367-4.366A8 8 0 0 1 10 2zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12z"/></svg>') no-repeat left 10px center;
+    background-size: 16px 16px; 
+    max-width: 400px;
+    padding: 6px 6px 6px 35px; 
+    border-radius: 15px;
+    border: none;
+    color: #333;
+    background-color: #ffffff;
 }
 
-.head .tabs {
+.icons-head {
+    display: flex;
+    align-items: center; 
+    margin-right: 75px;
+}
+
+.icons-head a {
+    margin-right: 5px; 
+}
+
+.icons-head a:last-child {
+    margin-right: 0; 
+}
+
+.icons-head img{
+    height: 20px;
+}
+
+.tab {
     display: flex;
     gap: 10px;
+    justify-content: center;
+    align-items: center; 
+    max-width: 300px;
+    max-height: 60px;
+    margin-right: 80px;
 }
 
-.head .tab {
+.tab-button {
     padding: 8px 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
-    background: #ddd;
+    background: #f4f4f4;
     transition: background 0.3s ease;
+    white-space: nowrap; 
 }
 
-.head .tab.active {
+.tab-button.active {
     background: darkgreen;
     color: white;
 }
 
-.head .tab:hover {
-    background: lightgray;
-}
-
-.head input {
-    flex-grow: 1;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.head .tab {
+.tab-button1 {
     padding: 8px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background: #ddd;
+    background: #f4f4f4;
+    transition: background 0.3s ease;
+    white-space: nowrap; 
 }
 
-.head .tab.active {
-    background: darkgreen;
+.tab-button1.active {
+    background: green;
     color: white;
 }
+
+.tab-button1:hover{
+    color: darkgreen;
+}
+
 
 main {
     background: white;
-    padding: 20px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
+    height: 60%;
+    width: 750px;
+    margin-top: 70px;
     gap: 20px;
+    align-self: start; 
+    margin-left: -650px; 
 }
 
 .banner {
-    background: darkgreen;
-    color: white;
-    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: flex-start;
+    background: #15421C;
+    color: rgb(247, 247, 247);
+    height: 400px;
     border-radius: 8px;
     text-align: center;
+}
+.banner h3{
+    font-size: 20px;
+    margin-top: 30px;
+    font-weight: 200;
+    line-height: 1.5;
+}
+.banner span{
+    color: #14A72A;
+    font-size:  35px;
+    margin-left: 40px;
+    font-weight: 600;
+}
+.banner p{
+    font-size: 11px;
+    margin-left: 45px;
+    color: #ddd;
+    margin-top: 20px;
 }
 
 .history {
     background: white;
-    padding: 15px;
+    margin-top: 0;
     border-radius: 8px;
 }
+.his-head{
+    display: flex;
+    flex-direction: row;
+    margin-top: -20px;
+}
+.his-head h4{
+    color: #7a7a7a;
+    font-size: 14px;
+    font-weight: 500;
+}
 
-.history table {
+.filter input[type="text"] {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23999" d="M19 4h-1V2h-2v2H8V2H6v2H5a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm1 17a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V10h16zm0-13H4V7a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1z"/></svg>') 
+    no-repeat left 10px center;
+    background-size: 16px 16px; 
+    max-width: 70px;
+    padding: 10px 6px 6px 35px; 
+    border-radius: 15px;
+    border: none;
+    color: #333;
+    background-color: #ffffff;
+}
+
+.filter{
+    margin-left: 520px;
+    margin-top: 15px;
+}
+.filter img{
+    height: 20px;
+}
+
+/* Table */
+table {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
+    border-collapse: collapse; 
+    border: none; 
 }
 
 .history th, .history td {
-    border: 1px solid #ddd;
+    border: none; 
     padding: 10px;
-    text-align: left;
+    text-align: center;
 }
 
 .history th {
-    background: #eee;
+    background: transparent;
+    font-weight: 600; 
+}
+
+.history td{
+    font-size: 14px;
 }
 
 .status {
-    padding: 5px 10px;
+    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     color: white;
     cursor: pointer;
 }
@@ -137,10 +221,37 @@ main {
     background: green;
 }
 
+/* location */
 .floor-status {
-    background: white;
-    padding: 15px;
+    background-color: #ffffff;
+    width: 30%;
     border-radius: 8px;
+    position: absolute; 
+    padding-left: 10px;
+    right: 30px; 
+    top: 42%; 
+    transform: translateY(-50%); 
+}
+
+.map-container {
+    width: 90%;
+    height: 250px;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    margin-left: 27px;
+    background: #f4f4f4; 
+}
+
+.box {
+    height: 100%;
+    width: 100%; 
+    background: #ccc;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bin-status p {
