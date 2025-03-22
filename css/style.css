@@ -831,29 +831,30 @@ input {
 
 .loginwith {
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    border: solid;
     gap: 10px; 
 }
 
 .google-btn1 {
-    display: flex;
+    background: #fff;
+    display: flex; 
     align-items: center;
     justify-content: center;
-    padding: 10px 15px;
-    font-size: 0.6rem;
-    width: auto;
-    min-width: 150px; 
+    padding: 8px 10px;
+    font-size: 0.8rem;
+    width: 60%;
     cursor: pointer;
+    margin-bottom: 10px;
     border: none;
-    border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    background: white;
+    border-radius: 5px; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
 }
+
 .google-btn1 img {
     width: 20px;
     height: 20px;
-    margin-right: 8px;
+    margin-right: 10px; 
 }
 
 

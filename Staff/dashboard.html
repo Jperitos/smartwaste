@@ -86,6 +86,14 @@
                         <td>11:30 PM</td>
                         <td><button class="status done">Done</button></td>
                     </tr>
+                    <tr>
+                        <td>Bin 032</td>
+                        <td>Floor 6</td>
+                        <td>John Daveh Larapan</td>
+                        <td>03-12-2025</td>
+                        <td>12:30 AM</td>
+                        <td><button class="status done">Done</button></td>
+                    </tr>
                 </table>
             </section>
         </main>
@@ -94,12 +102,25 @@
         <aside class="floor-status">
             <h4>Floor 5</h4>
             <div class="map-container">
-                <div class="box"></div>
+                <div class="box"> <img src="../image/Floor Plan.png" alt=""></div>
             </div>
+            <div class="floorstat">
+                <select class="floor-dropdown">
+                    <option value="1">Floor 1</option>
+                    <option value="2">Floor 2</option>
+                    <option value="3">Floor 3</option>
+                    <option value="4">Floor 4</option>
+                    <option value="4">Floor 5</option>
+                    <option value="4">Floor 6</option>
+                    <option value="4">Indigo</option>
+                </select>
+                <div class="stat">Status</div>
+            </div>
+            
             <div class="bin-status">
-                <p>Bin 051 - <span class="progress yellow">78%</span></p>
-                <p>Bin 052 - <span class="progress green">32%</span></p>
-                <p>Bin 053 - <span class="progress red">100%</span></p>
+                <p>Bin 051 <span class="progress yellow">78%</span></p>
+                <p>Bin 052 <span class="progress green">32%</span></p>
+                <p>Bin 053 <span class="progress red">100%</span></p>
             </div>
             <button class="notify">Notify</button>
         </aside>
