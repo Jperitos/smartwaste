@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staff Dashboard</title>
+    <link rel="stylesheet" href="../css/staff2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo2">
+        <img src="../image/ecobin-design (7).png" alt="Logo" />
+
+        <input type="text" placeholder="Search by bin number" class="search-bar" />
+      </div>
+
+      <div class="icons-head">
+        <a href="#" onclick="showNotifications()">
+          <img src="../image/bell-regular-24.png" alt="bell" />
+        </a>
+
+        <a href="#" onclick="showProfile()">
+          <img src="../image/user-regular-24.png" alt="profile" />
+        </a>
+      </div>
+    </header>
+    <div class="container">
+      <div class="dashboard-left">
+        <div class="tabs">
+          <div class="tab active" onclick="showTab('overview')">Overview</div>
+          <div class="tab" onclick="showTab('staff')">Staff</div>
+        </div>
+        <div class="tab-content active" id="overview">
+          <div class="banner">
+            <div class="top-banner">
+              <h2>Efficient Solutions for a</h2>
+              <h1>Greener Future</h1>
+            </div>
+
+            <div class="below-banner">
+              <p>Keeping Our School Clean, One Bin at a Time!</p>
+            </div>
+          </div>
+
+          <div class="his-head">
+            <div class="header-title">
+              <h4>Activity Logs</h4>
+            </div>
+
+            <div class="filter">
+              <input type="date" placeholder="00/00/00" />
+              <img src="../image/filter-alt-regular-24 (1).png" alt="filter" />
+            </div>
+          </div>
+        </div>
+        <div class="table">
+          <table>
+            <tr>
+              <th>Bins</th>
+              <th>Floor</th>
+              <th>Staff</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Status</th>
+            </tr>
+            <tr>
+              <td>Bin 011</td>
+              <td>Floor 1</td>
+              <td>Jade Arpiliag</td>
+              <td>07-03-1025</td>
+              <td>8:30 AM</td>
+              <td><button class="status done">Done</button></td>
+            </tr>
+            <tr>
+              <td>Bin 021</td>
+              <td>Floor 2</td>
+              <td>Angal Iballtorasca</td>
+              <td>06-27-2025</td>
+              <td>5:30 PM</td>
+              <td><button class="status done">Done</button></td>
+            </tr>
+            <tr>
+              <td>Bin 032</td>
+              <td>Floor 3</td>
+              <td>Jamaica Anobahh</td>
+              <td>03-12-2025</td>
+              <td>11:30 PM</td>
+              <td><button class="status done">Done</button></td>
+            </tr>
+            <tr>
+              <td>Bin 032</td>
+              <td>Floor 6</td>
+              <td>John Daveh Larapan</td>
+              <td>03-12-2025</td>
+              <td>12:30 AM</td>
+              <td><button class="status done">Done</button></td>
+            </tr>
+          </table>
+        </div>
+        <div class="tab-content" id="staff">This is the Staff content.</div>
+      </div>
+      <div class="dashboard-right"></div>
+    </div>
+    <script>
+      function showTab(tabId) {
+        document.querySelectorAll(".tab-content").forEach((content) => {
+          content.classList.remove("active");
+        });
+        document.querySelectorAll(".tab").forEach((tab) => {
+          tab.classList.remove("active");
+        });
+        document.getElementById(tabId).classList.add("active");
+        event.target.classList.add("active");
+      }
+    </script>
+  </body>
+</html>

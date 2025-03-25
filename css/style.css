@@ -14,7 +14,7 @@ html {
 }
 .wrapper {
     height: 95%;
-    width: 100%;
+    max-width: 1800px;
     display: flex;
     flex-direction: column;
 }
@@ -493,14 +493,15 @@ span{
 /* log in ni */
 .container {
     display: flex;
-    width: 70%;
-    height: 90vh;
+    width: 1000px;
+    height: 600px;
     background: #15421C;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     position: absolute;
     top: 50%;
     left: 50%;
+    border-radius: 20px;
     transform: translate(-50%, -50%);
 }
 
