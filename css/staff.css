@@ -16,9 +16,11 @@ html {
 
 
 .dashboard {
+    border-style: solid;
+    max-width: 1800px;
     display: grid;
     gap: 20px;
-    padding: 30px;
+    padding: 20px;
     background-color: #f4f4f4;
 }
 
