@@ -134,6 +134,52 @@ main {
     display: block;
 }
 
+.table2 {
+    width: 95%;
+    border-collapse: collapse; 
+    border: none; 
+    font-size: 12px;
+    position: relative;
+
+}   
+
+.table2 th, .table2 td {
+    border: none; 
+    padding: 10px;
+    text-align: center;
+}
+
+.table2 th {
+    background: transparent;
+    font-weight: 600; 
+}
+*/
+.table2 tr {
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.table2 tr.selected {
+    background-color: #aeb3af4b !important;
+    color: black !important;
+    font-weight: 500;
+}
+
+.table2 td{
+    padding: 2rem;
+}
+.status {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.status.done {
+    background-color: #3A7D44;
+}
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
