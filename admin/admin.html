@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staff Dashboard</title>
+    <link rel="stylesheet" href="../css/admin.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <aside>
+      <div class="logo2">
+        <img src="../image/ecobin-design (7).png" alt="Logo" />
+      </div>
+
+      <div class="options">
+        <ul>
+          <a href="#" class="menu-item active" data-target="dashboard"
+            ><i class="bx bx-home"></i> <span>Dashboard</span></a
+          >
+          <a href="#" class="menu-item" data-target="history"
+            ><i class="bx bx-history"></i> <span>History Logs</span></a
+          >
+          <a href="#" class="menu-item" data-target="staffs"><i class="bx bx-group"></i> <span>Staffs</span></a>
+          <a href="#" class="menu-item" data-target="settings"><i class="bx bx-cog"></i> <span>Settings</span></a>
+        </ul>
+      </div>
+
+      <div class="sign-out">
+        <a href="#"><i class="bx bx-log-out"></i> Logout</a>
+      </div>
+    </aside>
+
+    <main>
+      <!-- Dashboard Panel -->
+      <div id="dashboard" class="content-panel active">
+        <h1>Dashboard</h1>
+        <p>Welcome to the Staff Dashboard.</p>
+      </div>
+
+      <!-- History Logs Panel -->
+      <div id="history" class="content-panel">
+        <h1>History Logs</h1>
+        <p>View the complete history logs of the system.</p>
+      </div>
+
+      <!-- Staffs Panel -->
+      <div id="staffs" class="content-panel">
+        <h1>Staff Management</h1>
+        <p>Manage and view staff details.</p>
+      </div>
+
+      <!-- Settings Panel -->
+      <div id="settings" class="content-panel">
+        <h1>Settings</h1>
+        <p>Configure the system settings.</p>
+      </div>
+    </main>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
