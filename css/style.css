@@ -957,3 +957,44 @@ input {
     margin-left: 150px;
     margin-top: 20px;
 }
+
+
+.container-forgot{
+    max-width: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.left-forgot img{
+    width:100%;
+}
+h4{
+    color:#15421C ;
+}
+
+.right-forgot {
+padding: 2rem;
+
+}
+.right-forgot p{
+    font-size: 12px;
+    line-height: 2;
+}
+.right-forgot button{
+    width: 100%;
+    padding: .8rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #15421C;
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+}
+.right-forgot a{
+    color: #076d1e;
+}
+.right-forgot input{
+    margin-bottom: 1rem;
+}
