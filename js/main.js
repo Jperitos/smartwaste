@@ -215,7 +215,7 @@ const deleteButtons = document.querySelectorAll(".delete-btn");
 
 deleteButtons.forEach((button) => {
   button.addEventListener("click", function () {
-    staffToDelete = this.closest("tr"); // Get the row to delete
+    staffToDelete = this.closest("tr"); 
     deleteModal.style.display = "flex"; 
   });
 });
