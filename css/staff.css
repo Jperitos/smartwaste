@@ -680,4 +680,15 @@ label{
   }
   
  
-  
+  .search-bar3{
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23666" d="M10 2a8 8 0 1 1-5.293 14.293l-4.366 4.367a1 1 0 0 1-1.414-1.414l4.367-4.366A8 8 0 0 1 10 2zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12z"/></svg>') no-repeat left 10px center;
+    background-size: 16px 16px; 
+    width: 200px;
+    padding-block:.8rem;
+    border-radius: 15px;
+    border: none;
+    font-size: 10px;
+    padding-inline: 2rem;
+    color: #333;
+    background-color: #f0f0f0;
+}
