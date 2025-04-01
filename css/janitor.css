@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+}
+
+.map-container {
+    flex: 2;
+    border: 2px solid #007BFF;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.activity {
+    flex: 1;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.floor-select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.status-bar {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.status-bar span {
+    width: 100px;
+}
+
+.progress {
+    flex: 1;
+    height: 20px;
+    border-radius: 5px;
+}
