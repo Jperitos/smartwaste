@@ -34,6 +34,9 @@ header {
     padding: 1rem;
     
 }
+.logo2 h3{
+    color:#3A7D44;;
+}
 
 .logo2 {
     display: flex;
@@ -92,6 +95,7 @@ header {
     display: flex;
     cursor: pointer;
     gap: 2rem;
+    margin-top: -30px;
 }
 .tab {
     width: 80px;
@@ -266,6 +270,7 @@ header {
     height: 14px;
     cursor: pointer;
 }
+
 /* Table */
 .table-container {
     max-width: 800px;
@@ -278,7 +283,6 @@ header {
 
 .table {
  width: 100%;
-
     border-collapse: collapse; 
     border: none; 
     font-size: 12px;
@@ -293,9 +297,8 @@ header {
 }
 .table th, .table td {
     border: none; 
-    padding: 10px;
-text-align: center;
-
+    padding: 30px;
+    text-align: center;
 }
 
 
@@ -515,7 +518,7 @@ text-align: center;
     background-color: #f0f0f0;
 }
 .right-head{
-
+    margin-right: 20px;
     display: flex;
     gap: 2rem;
 }
@@ -523,13 +526,22 @@ text-align: center;
     display: flex;
     align-items: center;
     cursor: pointer;
-    
+    margin-right: 30px;
 }
 .filter p{
-    color: black;
+    color: rgb(148, 148, 148);
     font-size: 13px;
 }
+td.stat {
+    color: #ff6200;
+}
 
+
+.bx-sort-a-z {
+    font-size: 13px;
+    cursor: pointer;
+    color: rgb(148, 148, 148);
+}
 .add-staff-btn button{
     border-radius: 20px;
     border: none;

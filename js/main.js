@@ -241,8 +241,7 @@ window.addEventListener("click", (event) => {
   }
 });
 
-
-//   addmin
+//   admin
   
      document.querySelectorAll(".menu-item").forEach((item) => {
         item.addEventListener("click", function () {

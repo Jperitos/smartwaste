@@ -8,6 +8,31 @@ body {
 .container {
     display: flex;
 }
+.logo2 {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    gap: 60px;
+    font-weight: bold;
+}
+
+.logo2 img {
+    height:25px;
+    margin-left: 20px;
+}
+
+.logo2 input[type="text"] {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23666" d="M10 2a8 8 0 1 1-5.293 14.293l-4.366 4.367a1 1 0 0 1-1.414-1.414l4.367-4.366A8 8 0 0 1 10 2zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12z"/></svg>') no-repeat left 10px center;
+    background-size: 16px 16px; 
+    width: 200px;
+    padding-block:.8rem;
+    border-radius: 15px;
+    border: none;
+    font-size: 10px;
+    padding-inline: 2rem;
+    color: #333;
+    background-color: #f0f0f0;
+} 
 
 .map-container {
     flex: 2;
@@ -50,3 +75,105 @@ h1 {
     height: 20px;
     border-radius: 5px;
 }
+
+/* notif */
+.notification-container {
+    position: relative;
+    display: inline-block;
+
+}
+
+.bell-icon {
+    cursor: pointer;
+}
+
+.notification-dropdown {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 250px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.notification-header {
+    background: #3A7D44;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.notification-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.notification-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.notification-item:hover {
+    background: #f1f1f1;
+}
+
+.notification-footer {
+    text-align: center;
+    padding: 8px;
+    background: #f9f9f9;
+    font-size: 12px;
+    
+    a{
+        color: #3A7D44;
+    }
+}
+
+/* Profile  */
+.profile-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .profile-container img {
+  
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: white;
+    min-width: 120px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+  }
+  
+  .dropdown-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    font-size: 13px;
+  }
+  
+  .dropdown-menu a:hover {
+    background: #f0f0f0;
+  }
+  
+  .show {
+    display: block;
+  }
