@@ -54,6 +54,7 @@ document.addEventListener("click", function(event) {
         dropdown.style.display = "none";
     }
 });
+
 // filter table
 document.getElementById("dateFilter").addEventListener("input", filterTable);
 let sortAsc = true;
