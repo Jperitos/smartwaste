@@ -35,14 +35,14 @@ header {
     
 }
 .logo2 h3{
-    color:#3A7D44;;
+    color:#3A7D44;
+    margin-top: -1px;
 }
 
 .logo2 {
     display: flex;
     align-items: center;
     font-size: 22px;
-    gap: 60px;
     font-weight: bold;
 }
 
@@ -69,7 +69,7 @@ header {
     align-items: center; 
     margin-right: 1rem;
     position: relative;
-  left: 55%;
+    left: 80%;
 }
 
 .icons-head a {
@@ -689,9 +689,34 @@ label{
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    border: solid;
   }
-  
- 
+
+  .status-pending {
+    color: rgb(182, 182, 0);
+}
+
+.btn-send {
+    background-color: #3A7D44;
+    color: white;          
+    border: none;        
+    font-size: 12px;    
+    padding: 8px 16px;        
+    border-radius: 7px;       
+    cursor: pointer;         
+    font-weight: bold;       
+}
+
+.btn-send:hover {
+    background-color: #318b3f;
+}
+  .edit-btn, .delete-btn{
+    background-color: #f4f4f4;
+  }
+  .selected-row {
+    background-color: #f4f4f4; 
+}
+
   .search-bar3{
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23666" d="M10 2a8 8 0 1 1-5.293 14.293l-4.366 4.367a1 1 0 0 1-1.414-1.414l4.367-4.366A8 8 0 0 1 10 2zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12z"/></svg>') no-repeat left 10px center;
     background-size: 16px 16px; 

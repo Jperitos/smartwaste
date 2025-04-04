@@ -54,7 +54,7 @@ document.addEventListener("click", function(event) {
         dropdown.style.display = "none";
     }
 });
-// filkter table
+// filter table
 document.getElementById("dateFilter").addEventListener("input", filterTable);
 let sortAsc = true;
 
@@ -99,6 +99,7 @@ function sortTable() {
 }
 
 document.getElementById("sortBtn").addEventListener("click", sortTable);
+
 // progress bar
 function updateProgressBars() {
   const bins = document.querySelectorAll(".bin-status p");

@@ -21,38 +21,122 @@
 
       <div class="options">
         <ul>
-          <a href="#" class="menu-item active" data-target="dashboard"
-            ><i class="bx bx-home"></i> <span>Dashboard</span></a
-          >
-          <a href="#" class="menu-item" data-target="history"
-            ><i class="bx bx-history"></i> <span>History Logs</span></a
-          >
-          <a href="#" class="menu-item" data-target="staffs"><i class="bx bx-group"></i> <span>Staffs</span></a>
-          <a href="#" class="menu-item" data-target="settings"><i class="bx bx-cog"></i> <span>Settings</span></a>
+          <a href="#" class="menu-item active" data-target="dashboard">
+            <i class="bx bx-home"></i> <span>Dashboard</span>
+          </a>
+          <a href="#" class="menu-item" data-target="history">
+            <i class="bx bx-history"></i> <span>Activity Logs</span>
+          </a>
+          <a href="#" class="menu-item" data-target="staffs"> <i class="bx bx-group"></i> <span>Staffs</span> </a>
+          <a href="#" class="menu-item" data-target="settings"> <i class="bx bx-cog"></i> <span>Settings</span> </a>
         </ul>
       </div>
 
       <div class="sign-out">
-        <a href="#"><i class="bx bx-log-out"></i> Logout</a>
+        <a href="../index.html" onclick="logout()"><i class="bx bx-log-out"></i> Logout</a>
       </div>
     </aside>
 
     <main>
-      <!-- Dashboard  -->
+      <!-- Dashboard -->
       <div id="dashboard" class="content-panel active">
         <h1>Overview</h1>
         <p>Welcome to the Staff Dashboard.</p>
       </div>
 
-      <!-- History Logs  -->
+      <!-- History Logs -->
       <div id="history" class="content-panel">
-        <h1>History Logs</h1>
-        <p>View the complete history logs of the system.</p>
+        <h3>Activity Log</h3>
+
+        <div class="search-container">
+          <div class="filter">
+            <input type="date" id="dateFilter" class="date-filter" />
+            <button id="sortBtn" class="filter-btn">
+              <img src="../image/filter-alt-regular-24 (1).png" alt="filter" />
+            </button>
+          </div>
+        </div>
+
+        <div>
+          <table class="staff-table">
+            <thead>
+              <tr>
+                <th>Bins</th>
+                <th>Floor</th>
+                <th>Staff</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody">
+              <tr>
+                <td>Bin 011</td>
+                <td>Floor 1</td>
+                <td>Jade Arpiliag</td>
+                <td>2025-07-03</td>
+                <td>8:30 AM</td>
+                <td><button class="status-done">Done</button></td>
+              </tr>
+              <tr>
+                <td>Bin 011</td>
+                <td>Floor 1</td>
+                <td>Jade Arpiliag</td>
+                <td>2025-07-03</td>
+                <td>8:30 AM</td>
+                <td><button class="status-done">Done</button></td>
+              </tr>
+              <tr>
+                <td>Bin 011</td>
+                <td>Floor 1</td>
+                <td>Jade Arpiliag</td>
+                <td>2025-07-03</td>
+                <td>8:30 AM</td>
+                <td><button class="status-done">Done</button></td>
+              </tr>
+              <tr>
+                <td>Bin 011</td>
+                <td>Floor 1</td>
+                <td>Jade Arpiliag</td>
+                <td>2025-07-03</td>
+                <td>8:30 AM</td>
+                <td><button class="status-done">Done</button></td>
+              </tr>
+              <tr>
+                <td>Bin 011</td>
+                <td>Floor 1</td>
+                <td>Jade Arpiliag</td>
+                <td>2025-07-03</td>
+                <td>8:30 AM</td>
+                <td><button class="status-done">Done</button></td>
+              </tr>
+              <tr>
+                <td>Bin 011</td>
+                <td>Floor 1</td>
+                <td>Jade Arpiliag</td>
+                <td>2025-07-03</td>
+                <td>8:30 AM</td>
+                <td><button class="status-done">Done</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
 
-      <!-- Staffs  -->
+      <!-- Staffs -->
       <div id="staffs" class="content-panel">
         <h3>Staff Information</h3>
+
+        <div class="right-head">
+          <div class="search-bin-staff">
+            <input type="text" id="binSearch" placeholder="Search" class="search-bar2" />
+          </div>
+        </div>
+
+        <div class="request">
+          <h4 id="openStaffRequest">View Request Staff</h4>
+        </div>
+
         <div>
           <table class="table2">
             <tr>
@@ -72,52 +156,201 @@
               <td>Tungkil Minglanilla</td>
               <td>09950913018</td>
               <td>Floor 2</td>
-              <td>Pending</td>
-              <td><i class="bx bx-cog"></i></td>
+              <td>Active</td>
+              <td class="viewing">View</td>
             </tr>
             <tr>
-              <td>1002</td>
+              <td>1001</td>
               <td>Jamaica Anuba</td>
               <td>35</td>
               <td>Tungkil Minglanilla</td>
               <td>09950913018</td>
               <td>Floor 2</td>
-              <td>Confirm</td>
-              <td><i class="bx bx-cog"></i></td>
+              <td>Active</td>
+              <td class="viewing">View</td>
             </tr>
             <tr>
-              <td>1003</td>
+              <td>1001</td>
               <td>Jamaica Anuba</td>
               <td>35</td>
               <td>Tungkil Minglanilla</td>
               <td>09950913018</td>
               <td>Floor 2</td>
-              <td>Pending</td>
-              <td><i class="bx bx-cog"></i></td>
+              <td>Active</td>
+              <td class="viewing">View</td>
             </tr>
             <tr>
-              <td>1004</td>
+              <td>1001</td>
               <td>Jamaica Anuba</td>
               <td>35</td>
               <td>Tungkil Minglanilla</td>
               <td>09950913018</td>
               <td>Floor 2</td>
-              <td>Confirm</td>
-              <td><i class="bx bx-cog"></i></td>
+              <td>Active</td>
+              <td class="viewing">View</td>
+            </tr>
+            <tr>
+              <td>1001</td>
+              <td>Jamaica Anuba</td>
+              <td>35</td>
+              <td>Tungkil Minglanilla</td>
+              <td>09950913018</td>
+              <td>Floor 2</td>
+              <td>Active</td>
+              <td class="viewing">View</td>
             </tr>
           </table>
         </div>
+
+        <!-- Viewing staff request -->
+        <div id="staffRequestModal" class="staff-modal">
+          <div class="staff-modal-content">
+            <span class="close-staff-modal">&times;</span>
+            <div class="staff-header">
+              <h3>Staff Information</h3>
+            </div>
+            <div>
+              <table class="staff-table">
+                <tr>
+                  <th>Staff ID</th>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Address</th>
+                  <th>Contact No.</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+                <tr>
+                  <td>1001</td>
+                  <td>Angel Anuba</td>
+                  <td>35</td>
+                  <td>Tungkil Minglanilla</td>
+                  <td>09950913018</td>
+                  <td class="staff-status-pending">Pending</td>
+                  <td><button class="staff-request-btn">Accept Request</button></td>
+                </tr>
+                <tr>
+                  <td>1001</td>
+                  <td>Angel Anuba</td>
+                  <td>35</td>
+                  <td>Tungkil Minglanilla</td>
+                  <td>09950913018</td>
+                  <td class="staff-status-pending">Pending</td>
+                  <td><button class="staff-request-btn">Accept Request</button></td>
+                </tr>
+                <tr>
+                  <td>1001</td>
+                  <td>Angel Anuba</td>
+                  <td>35</td>
+                  <td>Tungkil Minglanilla</td>
+                  <td>09950913018</td>
+                  <td class="staff-status-pending">Pending</td>
+                  <td><button class="staff-request-btn">Accept Request</button></td>
+                </tr>
+                <tr>
+                  <td>1001</td>
+                  <td>Angel Anuba</td>
+                  <td>35</td>
+                  <td>Tungkil Minglanilla</td>
+                  <td>09950913018</td>
+                  <td class="staff-status-pending">Pending</td>
+                  <td><button class="staff-request-btn">Accept Request</button></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- Settings  -->
+      <!-- Settings -->
       <div id="settings" class="content-panel">
-        <div class="container">
-          <div class="left"></div>
-          <div class="right"></div>
+        <div class="content">
+          <div class="profile-section">
+            <img src="../image/PHOTO-SIZED-PASSPORT-AMIRUL1.jpg" alt="Profile Image" class="profile-img" />
+            <h3>Jerald Aliviano</h3>
+            <p>Admin</p>
+            <ul class="settings-menu">
+              <li class="tab-link active" data-tab="personal-info">Personal Information</li>
+              <li class="tab-link" data-tab="notifications">Notifications</li>
+              <li class="tab-link" data-tab="change-password">Change Password</li>
+            </ul>
+          </div>
+
+          <div class="tab-content">
+            <div id="personal-info" class="form-section tab-pane active">
+              <h2>Personal Information</h2>
+              <form>
+                <div class="form-group">
+                  <label>Name</label>
+                  <input type="text" />
+                </div>
+                <div class="form-group">
+                  <label>Gender</label>
+                  <div><input type="radio" name="gender" /> Male <input type="radio" name="gender" /> Female</div>
+                </div>
+                <div class="form-group">
+                  <label>Age</label>
+                  <input type="text" />
+                </div>
+                <div class="form-group">
+                  <label>Contact Number</label>
+                  <input type="text" />
+                </div>
+                <div class="form-group">
+                  <label>Address</label>
+                  <input type="text" />
+                </div>
+                <div class="form-group">
+                  <label>Email Address</label>
+                  <input type="email" />
+                </div>
+                <div class="form-group">
+                  <label>Assign Floor</label>
+                  <input type="text" />
+                </div>
+                <div class="form-group">
+                  <label>Marital Status</label>
+                  <select>
+                    <option>Single</option>
+                    <option>Married</option>
+                    <option>Widowed</option>
+                  </select>
+                </div>
+                <button class="update-btn">Update</button>
+              </form>
+            </div>
+
+            <div id="notifications" class="form-section tab-pane">
+              <h2>Notifications</h2>
+              <p>Manage notification settings here.</p>
+              <input type="checkbox" id="email-notifications" />
+              <label for="email-notifications">Enable Email Notifications</label>
+            </div>
+
+            <div id="change-password" class="form-section tab-pane">
+              <h2>Change Password</h2>
+              <form>
+                <div class="form-group">
+                  <label>Current Password</label>
+                  <input type="password" />
+                </div>
+                <div class="form-group">
+                  <label>New Password</label>
+                  <input type="password" />
+                </div>
+                <div class="form-group">
+                  <label>Confirm New Password</label>
+                  <input type="password" />
+                </div>
+                <button class="update-btn">Change Password</button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </main>
 
     <script src="../js/admin.js"></script>
+    <script src="../js/tabstaff.js"></script>
   </body>
 </html>

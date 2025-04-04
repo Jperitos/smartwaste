@@ -122,7 +122,40 @@ main {
     transition: 0.3s;
 
 }
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%; 
+}
 
+.filter {
+    display: flex;
+    align-items: center;
+    margin-right: 90px;
+    gap: 10px;
+}
+
+.date-filter {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.filter-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.filter-btn img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+  
 .content-panel {
     display: none;
     animation: fadeIn 0.3s ease-in-out;
@@ -130,6 +163,34 @@ main {
 
 .content-panel.active {
     display: block;
+}
+
+.content-panel h3 {
+    font-size: 20px;
+    margin-bottom: -10px;
+    margin-left: 30px;
+    color: #333;
+}
+.request {
+    text-align: right;
+    margin-right: 70px;
+    margin-bottom: 30px;
+}
+
+.status-done{
+border: none;
+background-color: #f4f4f4;
+color:  #15421C;
+font-weight: 500;
+padding: 10px 20px;
+}
+
+.request h4 {
+    font-size: 12px;
+    font-weight: 100;
+    margin-bottom: -20px;
+    color: rgb(179, 13, 13);
+    margin: 0; 
 }
 
 .table2 {
@@ -151,7 +212,7 @@ main {
     background: transparent;
     font-weight: 600; 
 }
-*/
+
 .table2 tr {
     transition: background-color 0.3s ease-in-out;
     cursor: pointer;
@@ -166,6 +227,32 @@ main {
 .table2 td{
     padding: 2rem;
 }
+.viewing{
+    color: #15421C;
+    font-weight: 500;
+}
+.right-head {
+    display: flex;
+    justify-content: flex-end; 
+    margin-right: 20%;
+    margin-top: 5px;
+    margin-bottom: -30px;
+    gap: 2rem;
+}
+
+.search-bin-staff {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar2 {
+    padding: 8px 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 200px;
+}
+
 .status {
     padding: 10px 20px;
     border: none;
@@ -177,6 +264,168 @@ main {
 .status.done {
     background-color: #3A7D44;
 }
+
+.modal-container {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.staff-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.staff-header{
+    margin-left: -25px;
+}
+
+.staff-modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 60%;
+    border-radius: 8px;
+    position: relative;
+
+}
+
+.close-staff-modal {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.staff-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.staff-table th, 
+.staff-table td {
+    padding: 10px;
+    text-align: center;
+    border: none; 
+    background: none; 
+    font-size: 12px;
+    gap: 100px;
+}
+
+.staff-status-pending {
+    color: rgb(143, 9, 9);
+    font-weight: 500;
+}
+
+
+.staff-request-btn {
+    background: #3A7D44;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.staff-request-btn:hover {
+    background: #175520;
+}
+
+
+.content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.profile-section {
+    width: 250px;
+    text-align: center;
+    padding-right: 30px;
+    border-right: 2px solid #ccc;
+
+}
+.profile-section img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.form-section {
+    flex-grow: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.update-btn {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.settings-menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.settings-menu li {
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.settings-menu li.active {
+    font-weight: bold;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
