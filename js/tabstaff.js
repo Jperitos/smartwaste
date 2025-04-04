@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
 window.onload = function () {
     const modal = document.getElementById("staffRequestModal");
     const openModal = document.getElementById("openStaffRequest");
